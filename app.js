@@ -8,10 +8,27 @@ app.use(bodyParser.json());
 app.use(methodOverride());
 
 var router = express.Router();
+var LedCtrl = require('./controllers/leds');
+
+// API routes
+var leds = express.Router();
+
+leds.route('/leds')  
+//  .get(TVShowCtrl.findAllTVShows)
+  .post(LedCtrl.actionOnLed);
+
+leds.route('/leds/:pin&:type')  
+  .get(LedCtrl.getLedStatus);
+/*
+  .put(TVShowCtrl.updateTVShow)
+  .delete(TVShowCtrl.deleteTVShow);
+*/
+app.use('/api', leds);  
 
 router.get('/', function(req, res) {  
    res.send("Hello World!");
 });
+
 
 app.use(router);
 
