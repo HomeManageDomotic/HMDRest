@@ -1,0 +1,742 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'forever-service',
+1 verbose cli   '-g' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'forever-service', null ]
+7 verbose cache add spec forever-service
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'forever-service',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'forever-service',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed forever-service@*
+10 verbose addNamed "*" is a valid semver range for forever-service
+11 silly addNameRange { name: 'forever-service', range: '*', hasData: false }
+12 silly mapToRegistry name forever-service
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/forever-service
+16 verbose addNameRange registry:https://registry.npmjs.org/forever-service not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/forever-service
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:25:36 PM
+20 verbose request id c5754d5fef75d0e0
+21 verbose etag W/"59bfb521-da50"
+22 verbose lastModified Mon, 18 Sep 2017 11:59:29 GMT
+23 http request GET https://registry.npmjs.org/forever-service
+24 http 304 https://registry.npmjs.org/forever-service
+25 silly get cb [ 304,
+25 silly get   { date: 'Mon, 06 Nov 2017 02:25:37 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: 'W/"59bfb521-da50"',
+25 silly get     age: '0',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-mia17626-MIA',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1509935138.957452,VS0,VE33',
+25 silly get     vary: 'Accept-Encoding, Accept' } ]
+26 verbose etag https://registry.npmjs.org/forever-service from cache
+27 verbose get saving forever-service to /root/.npm/registry.npmjs.org/forever-service/.cache.json
+28 silly addNameRange number 2 { name: 'forever-service', range: '*', hasData: true }
+29 silly addNameRange versions [ 'forever-service',
+29 silly addNameRange   [ '0.1.0',
+29 silly addNameRange     '0.1.1',
+29 silly addNameRange     '0.2.1',
+29 silly addNameRange     '0.2.3',
+29 silly addNameRange     '0.2.4',
+29 silly addNameRange     '0.2.5',
+29 silly addNameRange     '0.2.7',
+29 silly addNameRange     '0.2.8',
+29 silly addNameRange     '0.2.9',
+29 silly addNameRange     '0.2.10',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.3.2',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.4.1',
+29 silly addNameRange     '0.4.2',
+29 silly addNameRange     '0.4.3',
+29 silly addNameRange     '0.4.4',
+29 silly addNameRange     '0.4.5',
+29 silly addNameRange     '0.4.6',
+29 silly addNameRange     '0.4.7',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.5.1',
+29 silly addNameRange     '0.5.2',
+29 silly addNameRange     '0.5.3',
+29 silly addNameRange     '0.5.4',
+29 silly addNameRange     '0.5.5',
+29 silly addNameRange     '0.5.6',
+29 silly addNameRange     '0.5.7',
+29 silly addNameRange     '0.5.8',
+29 silly addNameRange     '0.5.9',
+29 silly addNameRange     '0.5.10',
+29 silly addNameRange     '0.5.11' ] ]
+30 silly addNamed forever-service@0.5.11
+31 verbose addNamed "0.5.11" is a plain semver version for forever-service
+32 silly cache afterAdd forever-service@0.5.11
+33 verbose afterAdd /root/.npm/forever-service/0.5.11/package/package.json not in flight; writing
+34 verbose afterAdd /root/.npm/forever-service/0.5.11/package/package.json written
+35 silly install resolved [ { name: 'forever-service',
+35 silly install resolved     version: '0.5.11',
+35 silly install resolved     preferGlobal: 'true',
+35 silly install resolved     description: 'Provision node script as a service via forever, allowing it to automatically start on boot, working across various Linux distros and OS',
+35 silly install resolved     main: 'lib/api.js',
+35 silly install resolved     dependencies:
+35 silly install resolved      { swig: '~1.4.2',
+35 silly install resolved        commander: '~2.3.0',
+35 silly install resolved        async: '~0.9.0',
+35 silly install resolved        shelljs: '~0.3.0',
+35 silly install resolved        walker: '~1.0.6' },
+35 silly install resolved     devDependencies: { 'fs-extra': '^0.30.0', mocha: '*', should: '*' },
+35 silly install resolved     scripts: { test: 'mocha test/*.js' },
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'git+https://github.com/zapty/forever-service.git' },
+35 silly install resolved     keywords:
+35 silly install resolved      [ 'forever',
+35 silly install resolved        'nodejs',
+35 silly install resolved        'aws',
+35 silly install resolved        'amazon',
+35 silly install resolved        'linux',
+35 silly install resolved        'initd',
+35 silly install resolved        'service',
+35 silly install resolved        'logrotate',
+35 silly install resolved        'reboot',
+35 silly install resolved        'start',
+35 silly install resolved        'service',
+35 silly install resolved        'amazon linux',
+35 silly install resolved        'centos',
+35 silly install resolved        'redhat',
+35 silly install resolved        'debian',
+35 silly install resolved        'raspbian',
+35 silly install resolved        'ubuntu',
+35 silly install resolved        'busenlabs' ],
+35 silly install resolved     bin:
+35 silly install resolved      { 'forever-service': './bin/forever-service',
+35 silly install resolved        'get-forever-config': './bin/get-forever-config' },
+35 silly install resolved     author: { name: 'Arvind Agarwal' },
+35 silly install resolved     bugs: { url: 'https://github.com/zapty/forever-service/issues' },
+35 silly install resolved     homepage: 'https://github.com/zapty/forever-service',
+35 silly install resolved     _id: 'forever-service@0.5.11',
+35 silly install resolved     _shasum: 'a3033478c51cd5c8ffb67c29cf70f38dcb466437',
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/forever-service/-/forever-service-0.5.11.tgz',
+35 silly install resolved     _from: 'forever-service@*',
+35 silly install resolved     _npmVersion: '4.0.1',
+35 silly install resolved     _nodeVersion: '6.9.1',
+35 silly install resolved     _npmUser: { name: 'zapty', email: 'arvind@zapty.com' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: 'a3033478c51cd5c8ffb67c29cf70f38dcb466437',
+35 silly install resolved        tarball: 'https://registry.npmjs.org/forever-service/-/forever-service-0.5.11.tgz' },
+35 silly install resolved     _npmOperationalInternal:
+35 silly install resolved      { host: 's3://npm-registry-packages',
+35 silly install resolved        tmp: 'tmp/forever-service-0.5.11.tgz_1505735968917_0.9582881492096931' },
+35 silly install resolved     directories: {},
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install forever-service@0.5.11 into /usr/local/lib
+37 info installOne forever-service@0.5.11
+38 verbose installOne of forever-service to /usr/local/lib not in flight; installing
+39 verbose lock using /root/.npm/_locks/forever-service-79981a9c7fa34942.lock for /usr/local/lib/node_modules/forever-service
+40 silly install write writing forever-service 0.5.11 to /usr/local/lib/node_modules/forever-service
+41 verbose unbuild lib/node_modules/forever-service
+42 info preuninstall forever-service@0.5.11
+43 info uninstall forever-service@0.5.11
+44 verbose unbuild rmStuff forever-service@0.5.11 from /usr/local/lib/node_modules
+45 silly gentlyRm /usr/local/bin/forever-service is being gently removed
+46 silly gentlyRm verifying /usr/local is an npm working directory
+47 silly gentlyRm /usr/local/bin/get-forever-config is being gently removed
+48 silly gentlyRm verifying /usr/local is an npm working directory
+49 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+50 silly gentlyRm deletion target /usr/local/bin/forever-service is under /usr/local
+51 verbose gentlyRm vacuuming from /usr/local/bin/forever-service up to /usr/local
+52 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+53 silly gentlyRm deletion target /usr/local/bin/get-forever-config is under /usr/local
+54 verbose gentlyRm vacuuming from /usr/local/bin/get-forever-config up to /usr/local
+55 info postuninstall forever-service@0.5.11
+56 silly gentlyRm /usr/local/lib/node_modules/forever-service is being purged from base /usr/local
+57 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever-service
+58 silly vacuum-fs purging /usr/local/lib/node_modules/forever-service
+59 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
+60 verbose tar unpack /root/.npm/forever-service/0.5.11/package.tgz
+61 verbose tar unpacking to /usr/local/lib/node_modules/forever-service
+62 silly gentlyRm /usr/local/lib/node_modules/forever-service is being purged
+63 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever-service
+64 silly gunzTarPerm modes [ '755', '644' ]
+65 silly gunzTarPerm extractEntry
+66 silly gunzTarPerm modified mode [ '', 509, 493 ]
+67 silly gunzTarPerm extractEntry .gitignore
+68 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+69 silly gunzTarPerm extractEntry LICENSE
+70 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+71 silly gunzTarPerm extractEntry README.md
+72 silly gunzTarPerm modified mode [ 'README.md', 509, 493 ]
+73 silly gunzTarPerm extractEntry bin/
+74 silly gunzTarPerm modified mode [ 'bin/', 509, 493 ]
+75 silly gunzTarPerm extractEntry bin/forever-service
+76 silly gunzTarPerm modified mode [ 'bin/forever-service', 509, 493 ]
+77 silly gunzTarPerm extractEntry bin/get-forever-config
+78 silly gunzTarPerm modified mode [ 'bin/get-forever-config', 509, 493 ]
+79 silly gunzTarPerm extractEntry lib/
+80 silly gunzTarPerm modified mode [ 'lib/', 509, 493 ]
+81 silly gunzTarPerm extractEntry lib/api.js
+82 silly gunzTarPerm modified mode [ 'lib/api.js', 436, 420 ]
+83 silly gunzTarPerm extractEntry lib/installer.js
+84 silly gunzTarPerm modified mode [ 'lib/installer.js', 436, 420 ]
+85 silly gunzTarPerm extractEntry lib/platforms.js
+86 silly gunzTarPerm modified mode [ 'lib/platforms.js', 436, 420 ]
+87 silly gunzTarPerm extractEntry lib/scriptBuilder.js
+88 silly gunzTarPerm modified mode [ 'lib/scriptBuilder.js', 436, 420 ]
+89 silly gunzTarPerm extractEntry package.json
+90 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+91 silly gunzTarPerm extractEntry templates/
+92 silly gunzTarPerm modified mode [ 'templates/', 509, 493 ]
+93 silly gunzTarPerm extractEntry templates/sysvinit/
+94 silly gunzTarPerm modified mode [ 'templates/sysvinit/', 509, 493 ]
+95 silly gunzTarPerm extractEntry templates/sysvinit/initd.template
+96 silly gunzTarPerm modified mode [ 'templates/sysvinit/initd.template', 436, 420 ]
+97 silly gunzTarPerm extractEntry templates/sysvinit/installer.js
+98 silly gunzTarPerm modified mode [ 'templates/sysvinit/installer.js', 436, 420 ]
+99 silly gunzTarPerm extractEntry templates/sysvinit/logrotate.template
+100 silly gunzTarPerm modified mode [ 'templates/sysvinit/logrotate.template', 509, 493 ]
+101 silly gunzTarPerm extractEntry templates/upstart/
+102 silly gunzTarPerm modified mode [ 'templates/upstart/', 509, 493 ]
+103 silly gunzTarPerm extractEntry templates/upstart/installer.js
+104 silly gunzTarPerm modified mode [ 'templates/upstart/installer.js', 436, 420 ]
+105 silly gunzTarPerm extractEntry templates/upstart/logrotate.template
+106 silly gunzTarPerm modified mode [ 'templates/upstart/logrotate.template', 509, 493 ]
+107 silly gunzTarPerm extractEntry templates/upstart/upstart.template
+108 silly gunzTarPerm modified mode [ 'templates/upstart/upstart.template', 436, 420 ]
+109 silly gunzTarPerm extractEntry test/
+110 silly gunzTarPerm modified mode [ 'test/', 509, 493 ]
+111 silly gunzTarPerm extractEntry test/files/
+112 silly gunzTarPerm modified mode [ 'test/files/', 509, 493 ]
+113 silly gunzTarPerm extractEntry test/files/debian/
+114 silly gunzTarPerm modified mode [ 'test/files/debian/', 509, 493 ]
+115 silly gunzTarPerm extractEntry test/files/debian/os-release
+116 silly gunzTarPerm modified mode [ 'test/files/debian/os-release', 436, 420 ]
+117 silly gunzTarPerm extractEntry test/files/raspbian/
+118 silly gunzTarPerm modified mode [ 'test/files/raspbian/', 509, 493 ]
+119 silly gunzTarPerm extractEntry test/files/raspbian/os-release
+120 silly gunzTarPerm modified mode [ 'test/files/raspbian/os-release', 436, 420 ]
+121 silly gunzTarPerm extractEntry test/files/ubuntu/
+122 silly gunzTarPerm modified mode [ 'test/files/ubuntu/', 509, 493 ]
+123 silly gunzTarPerm extractEntry test/files/ubuntu/os-release
+124 silly gunzTarPerm modified mode [ 'test/files/ubuntu/os-release', 436, 420 ]
+125 silly gunzTarPerm extractEntry test/scriptBuilderTest.js
+126 silly gunzTarPerm modified mode [ 'test/scriptBuilderTest.js', 436, 420 ]
+127 silly gunzTarPerm extractEntry test/server/
+128 silly gunzTarPerm modified mode [ 'test/server/', 509, 493 ]
+129 silly gunzTarPerm extractEntry test/server/hangingserver.js
+130 silly gunzTarPerm modified mode [ 'test/server/hangingserver.js', 436, 420 ]
+131 silly gunzTarPerm extractEntry test/server/normalserver.js
+132 silly gunzTarPerm modified mode [ 'test/server/normalserver.js', 436, 420 ]
+133 verbose write writing to /usr/local/lib/node_modules/forever-service/package.json
+134 info preinstall forever-service@0.5.11
+135 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever-service/package.json
+136 silly prepareForInstallMany adding swig@~1.4.2 from forever-service dependencies
+137 silly prepareForInstallMany adding commander@~2.3.0 from forever-service dependencies
+138 silly prepareForInstallMany adding async@~0.9.0 from forever-service dependencies
+139 silly prepareForInstallMany adding shelljs@~0.3.0 from forever-service dependencies
+140 silly prepareForInstallMany adding walker@~1.0.6 from forever-service dependencies
+141 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/forever-service/package.json
+142 silly cache add args [ 'commander@~2.3.0', null ]
+143 verbose cache add spec commander@~2.3.0
+144 silly cache add parsed spec Result {
+144 silly cache add   raw: 'commander@~2.3.0',
+144 silly cache add   scope: null,
+144 silly cache add   name: 'commander',
+144 silly cache add   rawSpec: '~2.3.0',
+144 silly cache add   spec: '>=2.3.0 <2.4.0',
+144 silly cache add   type: 'range' }
+145 silly addNamed commander@>=2.3.0 <2.4.0
+146 verbose addNamed ">=2.3.0 <2.4.0" is a valid semver range for commander
+147 silly addNameRange { name: 'commander', range: '>=2.3.0 <2.4.0', hasData: false }
+148 silly mapToRegistry name commander
+149 silly mapToRegistry using default registry
+150 silly mapToRegistry registry https://registry.npmjs.org/
+151 silly mapToRegistry uri https://registry.npmjs.org/commander
+152 verbose addNameRange registry:https://registry.npmjs.org/commander not in flight; fetching
+153 silly cache add args [ 'async@~0.9.0', null ]
+154 verbose cache add spec async@~0.9.0
+155 silly cache add parsed spec Result {
+155 silly cache add   raw: 'async@~0.9.0',
+155 silly cache add   scope: null,
+155 silly cache add   name: 'async',
+155 silly cache add   rawSpec: '~0.9.0',
+155 silly cache add   spec: '>=0.9.0 <0.10.0',
+155 silly cache add   type: 'range' }
+156 silly addNamed async@>=0.9.0 <0.10.0
+157 verbose addNamed ">=0.9.0 <0.10.0" is a valid semver range for async
+158 silly addNameRange { name: 'async', range: '>=0.9.0 <0.10.0', hasData: false }
+159 silly mapToRegistry name async
+160 silly mapToRegistry using default registry
+161 silly mapToRegistry registry https://registry.npmjs.org/
+162 silly mapToRegistry uri https://registry.npmjs.org/async
+163 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+164 silly cache add args [ 'shelljs@~0.3.0', null ]
+165 verbose cache add spec shelljs@~0.3.0
+166 silly cache add parsed spec Result {
+166 silly cache add   raw: 'shelljs@~0.3.0',
+166 silly cache add   scope: null,
+166 silly cache add   name: 'shelljs',
+166 silly cache add   rawSpec: '~0.3.0',
+166 silly cache add   spec: '>=0.3.0 <0.4.0',
+166 silly cache add   type: 'range' }
+167 silly addNamed shelljs@>=0.3.0 <0.4.0
+168 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for shelljs
+169 silly addNameRange { name: 'shelljs', range: '>=0.3.0 <0.4.0', hasData: false }
+170 silly mapToRegistry name shelljs
+171 silly mapToRegistry using default registry
+172 silly mapToRegistry registry https://registry.npmjs.org/
+173 silly mapToRegistry uri https://registry.npmjs.org/shelljs
+174 verbose addNameRange registry:https://registry.npmjs.org/shelljs not in flight; fetching
+175 silly cache add args [ 'walker@~1.0.6', null ]
+176 verbose cache add spec walker@~1.0.6
+177 silly cache add parsed spec Result {
+177 silly cache add   raw: 'walker@~1.0.6',
+177 silly cache add   scope: null,
+177 silly cache add   name: 'walker',
+177 silly cache add   rawSpec: '~1.0.6',
+177 silly cache add   spec: '>=1.0.6 <1.1.0',
+177 silly cache add   type: 'range' }
+178 silly addNamed walker@>=1.0.6 <1.1.0
+179 verbose addNamed ">=1.0.6 <1.1.0" is a valid semver range for walker
+180 silly addNameRange { name: 'walker', range: '>=1.0.6 <1.1.0', hasData: false }
+181 silly mapToRegistry name walker
+182 silly mapToRegistry using default registry
+183 silly mapToRegistry registry https://registry.npmjs.org/
+184 silly mapToRegistry uri https://registry.npmjs.org/walker
+185 verbose addNameRange registry:https://registry.npmjs.org/walker not in flight; fetching
+186 silly cache add args [ 'swig@~1.4.2', null ]
+187 verbose cache add spec swig@~1.4.2
+188 silly cache add parsed spec Result {
+188 silly cache add   raw: 'swig@~1.4.2',
+188 silly cache add   scope: null,
+188 silly cache add   name: 'swig',
+188 silly cache add   rawSpec: '~1.4.2',
+188 silly cache add   spec: '>=1.4.2 <1.5.0',
+188 silly cache add   type: 'range' }
+189 silly addNamed swig@>=1.4.2 <1.5.0
+190 verbose addNamed ">=1.4.2 <1.5.0" is a valid semver range for swig
+191 silly addNameRange { name: 'swig', range: '>=1.4.2 <1.5.0', hasData: false }
+192 silly mapToRegistry name swig
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry https://registry.npmjs.org/
+195 silly mapToRegistry uri https://registry.npmjs.org/swig
+196 verbose addNameRange registry:https://registry.npmjs.org/swig not in flight; fetching
+197 verbose request uri https://registry.npmjs.org/commander
+198 verbose request no auth needed
+199 info attempt registry request try #1 at 9:25:45 PM
+200 verbose etag W/"59f974e8-11954"
+201 verbose lastModified Wed, 01 Nov 2017 07:16:56 GMT
+202 http request GET https://registry.npmjs.org/commander
+203 verbose request uri https://registry.npmjs.org/async
+204 verbose request no auth needed
+205 info attempt registry request try #1 at 9:25:45 PM
+206 verbose etag W/"59ff1388-22103"
+207 verbose lastModified Sun, 05 Nov 2017 13:35:04 GMT
+208 http request GET https://registry.npmjs.org/async
+209 verbose request uri https://registry.npmjs.org/shelljs
+210 verbose request no auth needed
+211 info attempt registry request try #1 at 9:25:45 PM
+212 verbose etag W/"59f3f697-14ebb"
+213 verbose lastModified Sat, 28 Oct 2017 03:16:39 GMT
+214 http request GET https://registry.npmjs.org/shelljs
+215 verbose request uri https://registry.npmjs.org/walker
+216 verbose request no auth needed
+217 info attempt registry request try #1 at 9:25:45 PM
+218 verbose etag W/"5949615a-2a0c"
+219 verbose lastModified Tue, 20 Jun 2017 17:54:34 GMT
+220 http request GET https://registry.npmjs.org/walker
+221 verbose request uri https://registry.npmjs.org/swig
+222 verbose request no auth needed
+223 info attempt registry request try #1 at 9:25:45 PM
+224 verbose etag W/"595a0d95-122b6"
+225 verbose lastModified Mon, 03 Jul 2017 09:25:41 GMT
+226 http request GET https://registry.npmjs.org/swig
+227 http 304 https://registry.npmjs.org/shelljs
+228 silly get cb [ 304,
+228 silly get   { date: 'Mon, 06 Nov 2017 02:25:46 GMT',
+228 silly get     via: '1.1 varnish',
+228 silly get     'cache-control': 'max-age=300',
+228 silly get     etag: 'W/"59f3f697-14ebb"',
+228 silly get     age: '191',
+228 silly get     connection: 'keep-alive',
+228 silly get     'x-served-by': 'cache-mia17625-MIA',
+228 silly get     'x-cache': 'HIT',
+228 silly get     'x-cache-hits': '2',
+228 silly get     'x-timer': 'S1509935146.016693,VS0,VE0',
+228 silly get     vary: 'Accept-Encoding, Accept' } ]
+229 verbose etag https://registry.npmjs.org/shelljs from cache
+230 verbose get saving shelljs to /root/.npm/registry.npmjs.org/shelljs/.cache.json
+231 http 304 https://registry.npmjs.org/async
+232 silly get cb [ 304,
+232 silly get   { date: 'Mon, 06 Nov 2017 02:25:46 GMT',
+232 silly get     via: '1.1 varnish',
+232 silly get     'cache-control': 'max-age=300',
+232 silly get     etag: 'W/"59ff1388-22103"',
+232 silly get     age: '242',
+232 silly get     connection: 'keep-alive',
+232 silly get     'x-served-by': 'cache-mia17626-MIA',
+232 silly get     'x-cache': 'HIT',
+232 silly get     'x-cache-hits': '3',
+232 silly get     'x-timer': 'S1509935146.035980,VS0,VE0',
+232 silly get     vary: 'Accept-Encoding, Accept' } ]
+233 verbose etag https://registry.npmjs.org/async from cache
+234 verbose get saving async to /root/.npm/registry.npmjs.org/async/.cache.json
+235 http 304 https://registry.npmjs.org/commander
+236 silly get cb [ 304,
+236 silly get   { date: 'Mon, 06 Nov 2017 02:25:46 GMT',
+236 silly get     via: '1.1 varnish',
+236 silly get     'cache-control': 'max-age=300',
+236 silly get     etag: 'W/"59f974e8-11954"',
+236 silly get     age: '48',
+236 silly get     connection: 'keep-alive',
+236 silly get     'x-served-by': 'cache-mia17623-MIA',
+236 silly get     'x-cache': 'HIT',
+236 silly get     'x-cache-hits': '1',
+236 silly get     'x-timer': 'S1509935146.042076,VS0,VE0',
+236 silly get     vary: 'Accept-Encoding, Accept' } ]
+237 verbose etag https://registry.npmjs.org/commander from cache
+238 verbose get saving commander to /root/.npm/registry.npmjs.org/commander/.cache.json
+239 http 304 https://registry.npmjs.org/swig
+240 silly get cb [ 304,
+240 silly get   { date: 'Mon, 06 Nov 2017 02:25:46 GMT',
+240 silly get     via: '1.1 varnish',
+240 silly get     'cache-control': 'max-age=300',
+240 silly get     etag: 'W/"595a0d95-122b6"',
+240 silly get     age: '292',
+240 silly get     connection: 'keep-alive',
+240 silly get     'x-served-by': 'cache-mia17631-MIA',
+240 silly get     'x-cache': 'HIT',
+240 silly get     'x-cache-hits': '1',
+240 silly get     'x-timer': 'S1509935146.050280,VS0,VE0',
+240 silly get     vary: 'Accept-Encoding, Accept' } ]
+241 verbose etag https://registry.npmjs.org/swig from cache
+242 verbose get saving swig to /root/.npm/registry.npmjs.org/swig/.cache.json
+243 http 304 https://registry.npmjs.org/walker
+244 silly get cb [ 304,
+244 silly get   { date: 'Mon, 06 Nov 2017 02:25:46 GMT',
+244 silly get     via: '1.1 varnish',
+244 silly get     'cache-control': 'max-age=300',
+244 silly get     etag: 'W/"5949615a-2a0c"',
+244 silly get     age: '292',
+244 silly get     connection: 'keep-alive',
+244 silly get     'x-served-by': 'cache-mia17620-MIA',
+244 silly get     'x-cache': 'HIT',
+244 silly get     'x-cache-hits': '1',
+244 silly get     'x-timer': 'S1509935146.050377,VS0,VE0',
+244 silly get     vary: 'Accept-Encoding, Accept' } ]
+245 verbose etag https://registry.npmjs.org/walker from cache
+246 verbose get saving walker to /root/.npm/registry.npmjs.org/walker/.cache.json
+247 silly addNameRange number 2 { name: 'async', range: '>=0.9.0 <0.10.0', hasData: true }
+248 silly addNameRange versions [ 'async',
+248 silly addNameRange   [ '0.1.0',
+248 silly addNameRange     '0.1.1',
+248 silly addNameRange     '0.1.2',
+248 silly addNameRange     '0.1.3',
+248 silly addNameRange     '0.1.4',
+248 silly addNameRange     '0.1.5',
+248 silly addNameRange     '0.1.6',
+248 silly addNameRange     '0.1.7',
+248 silly addNameRange     '0.1.8',
+248 silly addNameRange     '0.1.9',
+248 silly addNameRange     '0.1.10',
+248 silly addNameRange     '0.1.11',
+248 silly addNameRange     '0.1.12',
+248 silly addNameRange     '0.1.13',
+248 silly addNameRange     '0.1.14',
+248 silly addNameRange     '0.1.15',
+248 silly addNameRange     '0.1.16',
+248 silly addNameRange     '0.1.17',
+248 silly addNameRange     '0.1.18',
+248 silly addNameRange     '0.1.19',
+248 silly addNameRange     '0.1.20',
+248 silly addNameRange     '0.1.21',
+248 silly addNameRange     '0.1.22',
+248 silly addNameRange     '0.2.0',
+248 silly addNameRange     '0.2.1',
+248 silly addNameRange     '0.2.2',
+248 silly addNameRange     '0.2.3',
+248 silly addNameRange     '0.2.4',
+248 silly addNameRange     '0.2.5',
+248 silly addNameRange     '0.2.6',
+248 silly addNameRange     '0.2.7',
+248 silly addNameRange     '0.2.8',
+248 silly addNameRange     '0.2.9',
+248 silly addNameRange     '0.2.10',
+248 silly addNameRange     '0.3.0',
+248 silly addNameRange     '0.4.0',
+248 silly addNameRange     '0.4.1',
+248 silly addNameRange     '0.5.0',
+248 silly addNameRange     '0.6.0',
+248 silly addNameRange     '0.6.1',
+248 silly addNameRange     '0.6.2',
+248 silly addNameRange     '0.7.0',
+248 silly addNameRange     '0.8.0',
+248 silly addNameRange     '0.9.0',
+248 silly addNameRange     '0.9.2',
+248 silly addNameRange     '1.0.0',
+248 silly addNameRange     '1.1.0',
+248 silly addNameRange     '1.2.0',
+248 silly addNameRange     '1.1.1',
+248 silly addNameRange     '1.2.1',
+248 silly addNameRange     '1.3.0',
+248 silly addNameRange     '1.4.0',
+248 silly addNameRange     '1.4.1',
+248 silly addNameRange     '1.4.2',
+248 silly addNameRange     '1.5.0',
+248 silly addNameRange     '1.5.1',
+248 silly addNameRange     '1.5.2',
+248 silly addNameRange     '2.0.0-alpha.0',
+248 silly addNameRange     '2.0.0-rc.1',
+248 silly addNameRange     '2.0.0-rc.2',
+248 silly addNameRange     '2.0.0-rc.3',
+248 silly addNameRange     '2.0.0-rc.4',
+248 silly addNameRange     '2.0.0-rc.5',
+248 silly addNameRange     '2.0.0-rc.6',
+248 silly addNameRange     '2.0.0',
+248 silly addNameRange     '2.0.1',
+248 silly addNameRange     '2.1.0',
+248 silly addNameRange     '2.1.1',
+248 silly addNameRange     '2.1.2',
+248 silly addNameRange     '2.1.4',
+248 silly addNameRange     '2.1.5',
+248 silly addNameRange     '2.2.0',
+248 silly addNameRange     '2.3.0',
+248 silly addNameRange     '2.4.0',
+248 silly addNameRange     '2.4.1',
+248 silly addNameRange     '2.5.0' ] ]
+249 silly addNamed async@0.9.2
+250 verbose addNamed "0.9.2" is a plain semver version for async
+251 silly addNameRange number 2 { name: 'walker', range: '>=1.0.6 <1.1.0', hasData: true }
+252 silly addNameRange versions [ 'walker',
+252 silly addNameRange   [ '0.0.1',
+252 silly addNameRange     '0.0.3',
+252 silly addNameRange     '0.0.4',
+252 silly addNameRange     '1.0.0',
+252 silly addNameRange     '1.0.1',
+252 silly addNameRange     '1.0.2',
+252 silly addNameRange     '1.0.3',
+252 silly addNameRange     '1.0.5',
+252 silly addNameRange     '1.0.6',
+252 silly addNameRange     '1.0.7' ] ]
+253 silly addNamed walker@1.0.7
+254 verbose addNamed "1.0.7" is a plain semver version for walker
+255 silly addNameRange number 2 { name: 'shelljs', range: '>=0.3.0 <0.4.0', hasData: true }
+256 silly addNameRange versions [ 'shelljs',
+256 silly addNameRange   [ '0.0.1',
+256 silly addNameRange     '0.0.2',
+256 silly addNameRange     '0.0.3',
+256 silly addNameRange     '0.0.4',
+256 silly addNameRange     '0.0.5',
+256 silly addNameRange     '0.0.6',
+256 silly addNameRange     '0.0.7',
+256 silly addNameRange     '0.0.8',
+256 silly addNameRange     '0.0.9',
+256 silly addNameRange     '0.1.0',
+256 silly addNameRange     '0.1.1',
+256 silly addNameRange     '0.1.2',
+256 silly addNameRange     '0.1.3',
+256 silly addNameRange     '0.1.4',
+256 silly addNameRange     '0.2.0',
+256 silly addNameRange     '0.2.1',
+256 silly addNameRange     '0.2.2',
+256 silly addNameRange     '0.2.3',
+256 silly addNameRange     '0.2.4',
+256 silly addNameRange     '0.2.5',
+256 silly addNameRange     '0.2.6',
+256 silly addNameRange     '0.3.0',
+256 silly addNameRange     '0.4.0',
+256 silly addNameRange     '0.5.0',
+256 silly addNameRange     '0.5.1',
+256 silly addNameRange     '0.5.2',
+256 silly addNameRange     '0.5.3',
+256 silly addNameRange     '0.6.0',
+256 silly addNameRange     '0.7.0',
+256 silly addNameRange     '0.7.1',
+256 silly addNameRange     '0.7.2',
+256 silly addNameRange     '0.7.3',
+256 silly addNameRange     '0.6.1',
+256 silly addNameRange     '0.7.4',
+256 silly addNameRange     '0.7.5',
+256 silly addNameRange     '0.7.6',
+256 silly addNameRange     '0.7.7',
+256 silly addNameRange     '0.7.8',
+256 silly addNameRange     '0.0.1-alpha1',
+256 silly addNameRange     '0.0.2-pre1',
+256 silly addNameRange     '0.0.4-pre1',
+256 silly addNameRange     '0.0.5-pre1',
+256 silly addNameRange     '0.0.5-pre2',
+256 silly addNameRange     '0.0.5-pre3',
+256 silly addNameRange     '0.0.5-pre4',
+256 silly addNameRange     '0.0.6-pre1',
+256 silly addNameRange     '0.0.6-pre2' ] ]
+257 silly addNamed shelljs@0.3.0
+258 verbose addNamed "0.3.0" is a plain semver version for shelljs
+259 silly addNameRange number 2 { name: 'swig', range: '>=1.4.2 <1.5.0', hasData: true }
+260 silly addNameRange versions [ 'swig',
+260 silly addNameRange   [ '0.1.1',
+260 silly addNameRange     '0.1.2',
+260 silly addNameRange     '0.1.3',
+260 silly addNameRange     '0.1.5',
+260 silly addNameRange     '0.1.6',
+260 silly addNameRange     '0.1.7',
+260 silly addNameRange     '0.1.8',
+260 silly addNameRange     '0.1.9',
+260 silly addNameRange     '0.2.0',
+260 silly addNameRange     '0.2.1',
+260 silly addNameRange     '0.2.2',
+260 silly addNameRange     '0.2.3',
+260 silly addNameRange     '0.3.0',
+260 silly addNameRange     '0.4.0',
+260 silly addNameRange     '0.5.0',
+260 silly addNameRange     '0.6.0',
+260 silly addNameRange     '0.6.1',
+260 silly addNameRange     '0.7.0',
+260 silly addNameRange     '0.8.0',
+260 silly addNameRange     '0.9.0',
+260 silly addNameRange     '0.9.1',
+260 silly addNameRange     '0.9.2',
+260 silly addNameRange     '0.9.3',
+260 silly addNameRange     '0.9.4',
+260 silly addNameRange     '0.10.0',
+260 silly addNameRange     '0.11.0',
+260 silly addNameRange     '0.11.1',
+260 silly addNameRange     '0.11.2',
+260 silly addNameRange     '0.12.0',
+260 silly addNameRange     '0.12.1',
+260 silly addNameRange     '0.13.0',
+260 silly addNameRange     '0.13.1',
+260 silly addNameRange     '0.13.2',
+260 silly addNameRange     '0.13.3',
+260 silly addNameRange     '0.13.4',
+260 silly addNameRange     '0.13.5',
+260 silly addNameRange     '0.14.0',
+260 silly addNameRange     '1.0.0-pre1',
+260 silly addNameRange     '1.0.0-pre2',
+260 silly addNameRange     '1.0.0-pre3',
+260 silly addNameRange     '1.0.0-rc1',
+260 silly addNameRange     '1.0.0-rc2',
+260 silly addNameRange     '1.0.0-rc3',
+260 silly addNameRange     '1.0.0',
+260 silly addNameRange     '1.1.0',
+260 silly addNameRange     '1.2.0',
+260 silly addNameRange     '1.2.1',
+260 silly addNameRange     '1.2.2',
+260 silly addNameRange     '1.3.0',
+260 silly addNameRange     '1.3.2',
+260 silly addNameRange     '1.4.0',
+260 silly addNameRange     '1.4.1',
+260 silly addNameRange     '1.4.2' ] ]
+261 silly addNamed swig@1.4.2
+262 verbose addNamed "1.4.2" is a plain semver version for swig
+263 warn deprecated swig@1.4.2: This package is no longer maintained
+264 silly addNameRange number 2 { name: 'commander', range: '>=2.3.0 <2.4.0', hasData: true }
+265 silly addNameRange versions [ 'commander',
+265 silly addNameRange   [ '0.0.1',
+265 silly addNameRange     '0.0.3',
+265 silly addNameRange     '0.0.4',
+265 silly addNameRange     '0.0.5',
+265 silly addNameRange     '0.1.0',
+265 silly addNameRange     '0.2.0',
+265 silly addNameRange     '0.2.1',
+265 silly addNameRange     '0.3.0',
+265 silly addNameRange     '0.3.1',
+265 silly addNameRange     '0.3.2',
+265 silly addNameRange     '0.3.3',
+265 silly addNameRange     '0.4.0',
+265 silly addNameRange     '0.4.1',
+265 silly addNameRange     '0.4.2',
+265 silly addNameRange     '0.4.3',
+265 silly addNameRange     '0.5.0',
+265 silly addNameRange     '0.5.1',
+265 silly addNameRange     '0.6.0',
+265 silly addNameRange     '0.6.1',
+265 silly addNameRange     '0.5.2',
+265 silly addNameRange     '1.0.0',
+265 silly addNameRange     '1.0.1',
+265 silly addNameRange     '1.0.2',
+265 silly addNameRange     '1.0.3',
+265 silly addNameRange     '1.0.4',
+265 silly addNameRange     '1.0.5',
+265 silly addNameRange     '1.1.0',
+265 silly addNameRange     '1.1.1',
+265 silly addNameRange     '1.2.0',
+265 silly addNameRange     '1.3.0',
+265 silly addNameRange     '1.3.1',
+265 silly addNameRange     '1.3.2',
+265 silly addNameRange     '2.0.0',
+265 silly addNameRange     '2.1.0',
+265 silly addNameRange     '2.2.0',
+265 silly addNameRange     '2.3.0',
+265 silly addNameRange     '2.4.0',
+265 silly addNameRange     '2.5.0',
+265 silly addNameRange     '2.5.1',
+265 silly addNameRange     '2.6.0',
+265 silly addNameRange     '2.7.0',
+265 silly addNameRange     '2.7.1',
+265 silly addNameRange     '2.8.0',
+265 silly addNameRange     '2.8.1',
+265 silly addNameRange     '2.9.0',
+265 silly addNameRange     '2.10.0',
+265 silly addNameRange     '2.11.0' ] ]
+266 silly addNamed commander@2.3.0
+267 verbose addNamed "2.3.0" is a plain semver version for commander
+268 verbose about to build /usr/local/lib/node_modules/forever-service
+269 verbose unlock done using /root/.npm/_locks/forever-service-79981a9c7fa34942.lock for /usr/local/lib/node_modules/forever-service
+270 verbose stack Error: Failed to parse json
+270 verbose stack No data, empty input at 1:1
+270 verbose stack
+270 verbose stack ^
+270 verbose stack     at parseError (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:379:11)
+270 verbose stack     at parseJson (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:68:23)
+270 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+270 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (evalmachine.<anonymous>:380:3)
+271 verbose cwd /opt/HMDRest
+272 error Linux 4.1.19+
+273 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "forever-service" "-g"
+274 error node v4.0.0
+275 error npm  v2.14.2
+276 error file /root/.npm/async/0.9.2/package/package.json
+277 error code EJSONPARSE
+278 error Failed to parse json
+278 error No data, empty input at 1:1
+278 error
+278 error ^
+279 error File: /root/.npm/async/0.9.2/package/package.json
+280 error Failed to parse package.json data.
+280 error package.json must be actual JSON, not just JavaScript.
+280 error
+280 error This is not a bug in npm.
+280 error Tell the package author to fix their package.json file. JSON.parse
+281 verbose exit [ 1, true ]
+282 verbose unbuild lib/node_modules/forever-service
+283 info preuninstall forever-service@0.5.11
+284 info uninstall forever-service@0.5.11
+285 verbose unbuild rmStuff forever-service@0.5.11 from /usr/local/lib/node_modules
+286 silly gentlyRm /usr/local/bin/forever-service is being gently removed
+287 silly gentlyRm verifying /usr/local is an npm working directory
+288 silly gentlyRm /usr/local/bin/get-forever-config is being gently removed
+289 silly gentlyRm verifying /usr/local is an npm working directory
+290 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+291 silly gentlyRm deletion target /usr/local/bin/forever-service is under /usr/local
+292 verbose gentlyRm vacuuming from /usr/local/bin/forever-service up to /usr/local
+293 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+294 silly gentlyRm deletion target /usr/local/bin/get-forever-config is under /usr/local
+295 verbose gentlyRm vacuuming from /usr/local/bin/get-forever-config up to /usr/local
+296 info postuninstall forever-service@0.5.11
+297 silly gentlyRm /usr/local/lib/node_modules/forever-service is being purged from base /usr/local
+298 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/forever-service
+299 silly vacuum-fs purging /usr/local/lib/node_modules/forever-service
+300 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
